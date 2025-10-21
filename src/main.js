@@ -1,5 +1,5 @@
-import * as THREE from "https://cdn.skypack.dev/three@0.152.2";
-import { OrbitControls } from "https://cdn.skypack.dev/three@0.152.2/examples/jsm/controls/OrbitControls.js";
+import * as THREE from "three";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import {
   CELL,
   MAP_LAYOUT,
