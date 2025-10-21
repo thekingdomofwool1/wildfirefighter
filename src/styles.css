@@ -1,0 +1,95 @@
+:root {
+  font-family: "Nunito", system-ui, sans-serif;
+  color: #f2f5f7;
+  background: #151822;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at top, #283046, #0b0d12 60%);
+}
+
+#scene {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+#ui {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  max-width: 320px;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(12px);
+  background: rgba(15, 19, 35, 0.78);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+  z-index: 10;
+}
+
+h1 {
+  margin: 0 0 0.6rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.control-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff9a3c, #ff5f6d);
+  color: #11131d;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.control-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(255, 98, 87, 0.45);
+}
+
+.control-btn:disabled,
+.control-btn:disabled:hover {
+  cursor: not-allowed;
+  opacity: 0.6;
+  box-shadow: none;
+  transform: none;
+}
+
+#status {
+  flex: 1;
+  font-size: 0.9rem;
+  color: #d0eaff;
+}
+
+.instructions {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #d3d9ff;
+}
+
+.instructions h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.4rem;
+}
+
+.instructions ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.instructions li + li {
+  margin-top: 0.3rem;
+}
